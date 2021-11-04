@@ -1,0 +1,5 @@
+node_modules/
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+app/css/
