@@ -1,9 +1,7 @@
 @import '_vars';
 @import '_global';
 @import '_fonts';
-.header {}
-.header__top {}
-.container {}
+//===========HEADER=====================================
 .header__top-inner {
 	display: flex;
 	justify-content: space-between;
@@ -55,6 +53,10 @@
 		}
 	}
 }
+//===========HEADER=====================================
+
+//===========SEARCH=====================================
+
 .search {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -107,3 +109,118 @@
 		top: 16px;
 	}
 }
+//===========SEARCH=====================================
+//===========PRODUCTS=====================================
+
+.products{
+	padding: 100px 0 110px;
+	background-color: $grey;
+}
+.products__title{
+	margin-bottom: 30px;
+}
+.products__btn{
+	text-align: center;
+	margin-bottom: 60px;
+	button{
+		padding: 12px 21px;
+		border: none;
+		background-color: #fff;
+		color: $bg;
+		cursor: pointer;
+		&.mixitup-control-active{
+			background-color: $red;
+			color: #fff;
+		}
+	}
+}
+.products__inner-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.products__item{
+	max-width: 442px;
+	box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+	margin-bottom: 30px;
+	width: 100%;
+	&-img{
+		display: block;
+		min-height: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&-content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $bg;
+		min-height: 80px;
+		border-bottom: 1px solid #e7ecf2;
+		padding: 30px;
+		padding-bottom: 10px;
+	}
+	&-name{
+		max-width: 310px;
+		font-weight: 500;
+	}
+	&-title{
+		font-size: 18px;
+	}
+	&-category{
+		color: $green;
+		font-size: 14px;
+		display: block;
+	}
+	&-price{
+		font-size: 20px;
+		font-weight: 700;
+	}
+	&-author{
+		color: $text;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+	}
+}
+.products__item-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 68px;
+	padding: 15px 30px;
+}
+.avatar{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-position: center;
+	display: inline-block;
+	background-size: cover;
+	margin-right: 14px;
+}
+.products__bottom-btn{
+	margin-top: 45px;
+	text-align: center;
+	font-size: 16px;
+	color: $bg;
+
+	button{
+		margin-right: 10px;
+		box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+		border: none;
+		background-color: #fff;
+		padding: 20px 30px;
+		cursor: pointer;
+		&.mixitup-control-active{
+			background-color: $red;
+			color: #fff;
+		}
+	}
+
+}
+
+
+
+//===========PRODUCTS=====================================
