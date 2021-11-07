@@ -252,6 +252,7 @@
 .features {
 	background-color: $bg;
 	padding-top: 120px;
+	padding-bottom: 115px;
 	&__title{
 		color: #fff;
 		margin-bottom: 85px;
@@ -340,5 +341,36 @@
 		color: $bg;
 	}
 }
-
 //===========AUTHORS=====================================
+//===========forFree=====================================\
+.forFree {
+	&__title{
+		margin: 65px 0 50px;
+		font-size: 36px;
+		line-height: 60px;
+		color: $bg;
+	}
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item{
+		&-img{
+			display: block;
+			max-width: 370px;
+			width: 100%;
+			font-size: 0;
+			line-height: 0;
+		}
+		&-text{
+			background-color: #f8f8f8;
+			padding: 35px 0;
+			font-size: 24px;
+			line-height: 30px;
+			color: $bg;
+			font-weight: 700;
+			text-align: center;
+		}
+	}
+}
+//===========forFree=====================================
