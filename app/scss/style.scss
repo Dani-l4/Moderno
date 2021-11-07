@@ -239,10 +239,10 @@
 			box-shadow: inset 0px 2px #bcbcbc;
 			border: none;
 		}
-	&.slick-active{
-		button{
-			background-color: $green;
-		}
+		&.slick-active{
+			button{
+				background-color: $green;
+			}
 		}
 	}
 }
@@ -310,8 +310,35 @@
 }
 //===========FEATURES=====================================
 //===========AUTHORS=====================================
-
-
-
+.authors {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 760px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	&__content{
+		background-color: $green;
+		padding: 70px 60px;
+		display: flex;
+		align-items: center;
+	}
+	&__text{
+		font-size: 30px;
+		line-height: 36px;
+		color: #fff;
+		width: 265px;
+		margin: 0 45px 0 0;
+	}
+	&__btn{
+		padding: 20px 43px;
+		background-color: #fff;
+		font-size: 18px;
+		line-height: 36px;
+		border: none;
+		color: $bg;
+	}
+}
 
 //===========AUTHORS=====================================
