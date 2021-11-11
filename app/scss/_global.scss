@@ -47,3 +47,11 @@ body{
 .star_rate{
 	display: inline-block;
 }
+.angle-right::before{
+	content:'\f105';
+	font-family: 'icomoon';
+	color: $green;
+	font-size: 14px;
+	position: absolute;
+	left: 0;
+}
