@@ -1,7 +1,5 @@
 $(function(){
 
-	var mixer = mixitup('.products__inner-box');
-
 	$('.weektrend__slider').slick({
 		arrows: false,
 		dots: true,
@@ -15,4 +13,13 @@ $(function(){
     rating: 5,
   });
 
+	 $('.menu__btn').on('click', function(){
+	 	$('.menu__list').slideToggle();
+	 });
+	 
+	$('.header__btn-menu').on('click', function(){
+	 	$('.header__box').toggleClass('active');
+	 });
+
+	var mixer = mixitup('.products__inner-box');
 });
