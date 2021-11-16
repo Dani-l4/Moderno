@@ -376,6 +376,113 @@
 .header__btn--off{
 	display: none;
 }
+//===========MODAL=====================================
+#modal{
+	max-width: 730px;
+	width: 100%;
+	background-color: $green;
+	text-align: center;
+	padding: 90px 0;
+	position: relative;
+	color: #fff;
+	cursor: default;
+	form{
+		width: 400px;
+		margin: 0 auto;
+		text-align: left;
+		label{
+			position: relative;
+			&::before{
+				position: absolute;
+				z-index: 1;
+				top: 14px;
+				left: 18px;
+			}
+		}
+	}
+	input{
+		display: block;
+		margin: 0 auto 10px auto;
+		width: 100%;
+		font-size: 14px;
+		line-height: 36px;
+		background-color: #76ae36;
+		border: none;
+		color: #fff;
+		padding: 3px 40px;
+		outline: none;
+		cursor: pointer;
+		font-family: 'Roboto-Regular', sans-serif;
+		position: relative;
+		&::placeholder{
+			color: #fff;
+			font-family: 'Roboto-Regular', sans-serif;
+		}
+	}
+}
+.login__title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+.modal__link{
+	font-size: 18px;
+	background-color: #76ae36;
+	padding: 7px 30px 13px 65px;
+	color: #fff;
+	width: 245px;
+	position: relative;
+	display: inline-block;
+	line-height: 30px;
+	cursor: pointer;
+	font-family: 'Roboto-Regular', sans-serif;
+	&:hover{
+		background-color: #fff;
+		box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+		color: #000;
+	}
+	&::before{
+		position: absolute;
+		left: 30px;
+		top: 20%;
+	}
+	& + &{
+		background-color: transparent;
+		display: block;
+		padding: 0;
+		&:hover{
+			box-shadow: none;
+			color: #fff;
+			background-color: transparent;
+		}
+	}
+}
+.modal__btn{
+	cursor: pointer;
+	width: 140px;
+	background-color: #76ae36;
+	border: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 17px 0;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	color: #fff;
+	transition: all .3s;
+	&:hover{
+		background-color: #fff;
+		box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+		color: #000;
+		font-weight: 700;
+	}
+}
+.fancybox__content>.carousel__button.is-close{
+	top: 20px;
+	right: 30px;
+}
+//===========MODAL=====================================
+
 //===========HEADER=====================================
 
 //===========SEARCH=====================================
