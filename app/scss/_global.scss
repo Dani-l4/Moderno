@@ -50,11 +50,54 @@ body{
 .star_rate{
 	display: inline-block;
 }
-.angle-right::before{
-	content:'\f105';
-	font-family: 'icomoon';
-	color: $green;
-	font-size: 14px;
-	position: absolute;
-	left: 0;
+.angle-right{
+	position: relative;
+	padding-left: 15px;
+	&::before{
+		content:'\f105';
+		font-family: 'icomoon';
+		color: $green;
+		font-size: 14px;
+		position: absolute;
+		left: 0;
+	}
+}
+.breadcrumbs__inner {
+	padding-top: 45px;
+	padding-bottom: 40px;
+}
+.breadcrumbs__list {
+	li{
+		font-size: 15px;
+		color: #b0bec5;
+		display: inline-block;
+		position: relative;
+		a{
+			padding-right: 15px;
+			&::after{
+				content:'';
+				position: absolute;
+				top: 50%;
+				right: 3px;
+				width: 5px;
+				height: 2px;
+				background-color: #b0bec5;
+			}
+		}
+		span{
+			color: $bg;
+		}
+	}
+}
+.wrapper{
+	background-color: #f4f6f5;
+}
+.blue {
+	background-color: #42a5f5;
+}
+.bg {
+	background-color: $bg;
+}
+.green {
+	background-color: $green;
 }
